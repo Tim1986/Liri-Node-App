@@ -1,6 +1,7 @@
 require("dotenv").config();
 var Spotify = require('node-spotify-api');
 var axios = require("axios");
+var moment = require("moment");
 var fs = require("fs");
 var inputString = process.argv;
 var searchType = inputString[2];
@@ -89,7 +90,7 @@ function concert() {
                 var concertObject = {
                     venueName: response.data[i].venue.name,
                     venueLocation: response.data[i].venue.city,
-                    eventDate: response.data[i].datetime
+                    eventDate: moment(response.data[i].datetime).format('L')
                 }
                 for (var key in concertObject) {
                     console.log('* ' + concertObject[key]);
@@ -98,7 +99,7 @@ function concert() {
                             console.log(err);
                         }
                         else {
-                            console.log("Content Added!");
+                            // console.log("Content Added!");
                         }
                     });
                 }
@@ -126,18 +127,22 @@ function song() {
     var spotify = new Spotify(keys.spotify);
 
     if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
-        search = "welcome to the black parade"
+        search = "the sign"
+        indexV = 2
+    } else {
+        indexV = 0
     }
-
-    spotify
-        .search({ type: 'track', query: search, limit: 1 })
+    console.log(indexV)
+        spotify
+        .search({ type: 'track', query: search, limit: 3 })
         .then(function (response) {
             var songObject = {
-                artist: response.tracks.items[0].artists[0].name,
-                song: response.tracks.items[0].name,
-                preview: response.tracks.items[0].preview_url,
-                album: response.tracks.items[0].album.name
+                artist: response.tracks.items[indexV].artists[0].name,
+                song: response.tracks.items[indexV].name,
+                preview: response.tracks.items[indexV].preview_url,
+                album: response.tracks.items[indexV].album.name
             }
+            console.log("====" + response)
             for (var key in songObject) {
                 console.log('* ' + songObject[key])
                 fs.appendFile("log.txt", songObject[key] + "-----", function (err) {
@@ -165,7 +170,7 @@ function song() {
             }
             console.log(error.config);
         });
-}
+    }
 
 function movie() {
     if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
