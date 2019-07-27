@@ -24,7 +24,7 @@ If you use the do-what-it-says command, you don't need to type out a search. The
 
 If you want to rewrite the random.txt file, follow node liri.js with "change", followed by the search type and search content. For instance, if you want to rewrite the random.txt file so the do-what-it-says command will do a movie search for Toy Story, you would type: node liri.js change movie-this Toy Story. The console will even remind you that node liri.js do-what-it-says will do exactly the same command as your previous command without the word "change" (in this case, node liri.js movie-this Toy Story).
 
-All of these searches will log your command in the log.txt file, as well as the search contents.
+*All of these searches will log your command in the log.txt file, as well as the search contents.*
 
 <!-- Include screenshots, gifs or videos of the app functioning -->
 

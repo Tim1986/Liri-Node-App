@@ -1,13 +1,9 @@
 
-NEW COMMAND: node liri.js change spotify-this-song need you now; 
-DO-WHAT-IT-SAYS UPDATED!
-NEW COMMAND: node liri.js spotify-this-song need you now; 
-Lady Antebellum-----null-----Need You Now-----Need You Now-----
 NEW COMMAND: node liri.js do-what-it-says; 
-Lady Antebellum-----Need You Now-----null-----Need You Now-----
-NEW COMMAND: node liri.js change movie-this doctor strange; 
+Backstreet Boys-----I Want It That Way-----https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=329831336dc0444b8bd14949da43b2e4-----The Hits--Chapter One-----
+NEW COMMAND: node liri.js change concert-this brad paisley; 
 DO-WHAT-IT-SAYS UPDATED!
-NEW COMMAND: node liri.js movie-this doctor strange; 
-Doctor Strange-----2016-----7.5-----89%-----USA-----English-----While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.-----Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong-----
+NEW COMMAND: node liri.js concert-this brad paisley; 
+Blossom Music Center-----Cuyahoga Falls-----2019-08-02T03:30:00-----Hollywood Casino Amphitheatre-----Tinley Park-----2019-08-03T03:30:00-----Mark G Etess Arena at Hard Rock Hotel & Casino-----Atlantic City-----2019-08-09T03:30:00-----Jiffy Lube Live-----Bristow-----2019-08-10T03:30:00-----Daily's Place Amphitheater-----Jacksonville-----2019-08-16T03:30:00-----SpringHill Suites by Marriott Orange Beach at The Wharf-----Orange Beach-----2019-08-22T03:30:00-----PNC Music Pavilion-----Charlotte-----2019-08-24T03:30:00-----Northwell Health at Jones Beach Theater-----Wantagh-----2019-08-30T20:00:00-----York County Fair-----York-----2019-09-06T20:00:00-----Oslo Spektrum Arena-----Oslo-----2019-10-04T19:30:00-----Royal Arena-----København S-----2019-10-05T20:00:00-----Hovet-----Stockholm-----2019-10-06T19:30:00-----Poppodium 013-----Tilburg-----2019-10-11T19:00:00-----The O2-----London-----2019-10-12T18:30:00-----3Arena-----Dublin-----2019-10-13T18:30:00-----
 NEW COMMAND: node liri.js do-what-it-says; 
-Doctor Strange-----2016-----7.5-----89%-----USA-----English-----While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.-----Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong-----
+Blossom Music Center-----Cuyahoga Falls-----2019-08-02T03:30:00-----Hollywood Casino Amphitheatre-----Tinley Park-----2019-08-03T03:30:00-----Mark G Etess Arena at Hard Rock Hotel & Casino-----Atlantic City-----2019-08-09T03:30:00-----Jiffy Lube Live-----Bristow-----2019-08-10T03:30:00-----Daily's Place Amphitheater-----Jacksonville-----2019-08-16T03:30:00-----SpringHill Suites by Marriott Orange Beach at The Wharf-----Charlotte-----2019-08-24T03:30:00-----Northwell Health at Jones Beach Theater-----Wantagh-----2019-08-30T20:00:00-----York County Fair-----York-----2019-09-06T20:00:00-----Oslo Spektrum Arena-----Oslo-----2019-10-04T19:30:00-----Royal Arena-----København S-----2019-10-05T20:00:00-----Hovet-----Stockholm-----2019-10-06T19:30:00-----Poppodium 013-----Tilburg-----Orange Beach-----2019-10-11T19:00:00-----London-----The O2-----2019-08-22T03:30:00-----PNC Music Pavilion-----2019-10-13T18:30:00-----2019-10-12T18:30:00-----Dublin-----3Arena-----
