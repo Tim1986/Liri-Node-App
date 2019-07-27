@@ -1,0 +1,21 @@
+
+NEW COMMAND: node liri.js concert-this switchfoot; 
+Gunstock Mountain Resort-----Gilford-----2019-08-02T09:00:00-----The Foundry at The Fillmore-----2019-08-03T19:00:30-----Bottle & Cork-----2019-08-04T20:00:00-----Philadelphia-----Chattanooga-----2019-08-06T20:00:00-----Evergreen State Fair-----Monroe-----2019-08-26T19:30:00-----El Plaza Condesa-----Mexico City-----2019-09-12T21:00:00-----Del Mar Fairgrounds-----Del Mar-----2019-09-14T19:00:00-----Honeywell Center-----2019-10-05T19:00:00-----Temple Theatre-----Dewey Beach-----Wabash-----Saginaw-----2019-10-06T19:00:00-----Peoria Civic Center Theater-----2019-10-10T19:00:00-----Peoria-----Goodyear Theater-----Akron-----2019-10-12T19:00:00-----Columbus-----The Athenaeum Theatre-----2019-10-13T19:00:00-----Hershey Theatre-----Hershey-----2019-10-15T19:00:00-----Roberts Wesleyan College – Voller Athletic Center-----Rochester-----2019-10-18T19:00:00-----Florida Theatre-----Jacksonville-----2019-10-24T19:00:00-----Saenger Theater-----Mobile-----2019-10-25T19:00:00-----Thala Mara-----Jackson-----2019-10-27T19:00:00-----Robinson Center - Robinson Performance Hall-----Little Rock-----2019-10-29T19:00:00-----Boulder Theater-----Boulder-----2019-11-02T19:00:00-----Thousand Oaks Civic Arts Plaza-----2019-11-07T19:00:00-----Bob Hope Theatre-----Stockton-----2019-11-09T19:00:00-----Thousand Oaks-----The Signal-----
+NEW COMMAND: node liri.js spotify-this-song dream on; 
+Aerosmith-----https://p.scdn.co/mp3-preview/4c7fea33f70ea10631656c9bccace988ee2aaa42?cid=329831336dc0444b8bd14949da43b2e4-----Dream On-----Aerosmith-----
+NEW COMMAND: node liri.js movie-this inside out; 
+Inside Out-----USA-----English-----2015-----After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.-----8.2-----Amy Poehler, Phyllis Smith, Richard Kind, Bill Hader-----98%-----
+NEW COMMAND: node liri.js do-what-it-says; 
+My Chemical Romance-----Welcome to the Black Parade-----https://p.scdn.co/mp3-preview/0c19f3a680ff92f9d38a34b3310e6ff1a661ab1e?cid=329831336dc0444b8bd14949da43b2e4-----The Black Parade-----
+NEW COMMAND: node liri.js change movie-this liar liar; 
+DO-WHAT-IT-SAYS UPDATED!
+NEW COMMAND: node liri.js do-what-it-says; 
+Liar Liar-----1997-----6.9-----USA-----English-----A fast-track lawyer can't lie for 24 hours due to his son's birthday wish after he disappoints his son for the last time.-----Jim Carrey, Maura Tierney, Justin Cooper, Cary Elwes-----81%-----
+NEW COMMAND: node liri.js change movie-this star wars; 
+DO-WHAT-IT-SAYS UPDATED!
+NEW COMMAND: node liri.js do-what-it-says; 
+Star Wars: Episode IV - A New Hope-----93%-----USA-----English-----Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.-----Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing-----1977-----8.6-----
+NEW COMMAND: node liri.js movie-this star wars; 
+Star Wars: Episode IV - A New Hope-----93%-----1977-----USA-----English-----Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.-----Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing-----8.6-----
+NEW COMMAND: node liri.js change spotify-this-song dream on; 
+DO-WHAT-IT-SAYS UPDATED!
