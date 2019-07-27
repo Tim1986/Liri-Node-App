@@ -3,7 +3,7 @@
 ## Overview
 
 <!-- Clearly state the problem the app is trying to solve (i.e. what is it doing and why) -->
-The liri-node-app makes it extremely easy to search the included APIs for information, simply by using the terminal. It currently includes Bands in Town (for upcoming concerts), Spotify (for song information), and OMDB (for movie information) APIs, but it could very easily be adapapted to include any number of others by simply adding more searchType options in the switchcase and adding corresponding functions below. 
+The liri-node-app makes it extremely easy to search the included APIs for information, simply by using the terminal. It currently includes Bands in Town (for upcoming concerts), Spotify (for song information), and OMDB (for movie information), but it could very easily be adapted to include any number of others by simply adding more searchType options in the switchcase and adding corresponding functions below. 
 
 This app is designed to make reviewing your search information extremely easy by logging your searches in your console, and additionally logging them in a log.txt document, with each new command giving line breaks for easy readability. The app also has built in functionality for reading outside documents (currently just a simple .txt file) and running searches based on their contents. It also has an additional command option "change," which can be used to rewrite the .txt file, so you can run searches from it as well.
 
