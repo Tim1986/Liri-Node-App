@@ -2,12 +2,11 @@ require("dotenv").config();
 var Spotify = require('node-spotify-api');
 var axios = require("axios");
 var fs = require("fs");
-
 var inputString = process.argv;
-var command = inputString[2];
+var searchType = inputString[2];
 var search = inputString.slice(3).join("+");
 
-switch (command) {
+switch (searchType) {
     case "concert-this":
         log();
         concert();
@@ -25,12 +24,12 @@ switch (command) {
 
     case "do-what-it-says":
         log();
-        random();
+        read();
         break;
     
     case "change":
         log();
-        change();
+        write();
         break;
 
     default:
@@ -39,7 +38,7 @@ switch (command) {
 
 function log() {
     if (inputString[3]) {
-    fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js " + command + " " + inputString.slice(3).join(" ") + "; " + "\n", function(err) {
+    fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js " + searchType + " " + inputString.slice(3).join(" ") + "; " + "\n", function(err) {
         if (err) {
           console.log(err);
         }
@@ -47,7 +46,7 @@ function log() {
           console.log("Content Added!");
         }
       });
-    } else if (command === "change") {
+    } else if (searchType === "change") {
         fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js change " + inputString[3] + " " + inputString.slice(4).join(" ") + "; " + "\n", function(err) {
             if (err) {
               console.log(err);
@@ -182,7 +181,7 @@ function movie() {
           });
 }
 
-function random() {
+function read() {
     fs.readFile("random.txt", "utf8", function (error, data) {
         if (error) {
             return console.log(error)
@@ -201,7 +200,7 @@ function random() {
 }
 
 // This will work as long as "node liri.js change" is followed by concert-this, spotify-this-song, or movie-this, and then followed by an appropriate search term.
-function change() {
+function write() {
     fs.writeFile("random.txt", process.argv[3] + "," + process.argv.slice(4).join(" "), function(err) {
         if (err) {
           return console.log(err);
