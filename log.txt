@@ -1,0 +1,27 @@
+
+NEW COMMAND: node liri.js do-what-it-says; 
+Mr. Nobody-----67%-----Belgium, Germany, Canada, France, USA, UK-----English, Mohawk-----2009-----A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.-----7.8-----Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham-----
+NEW COMMAND: node liri.js movie-this up; 
+Up-----2009-----USA-----English-----Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.-----Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson-----8.2-----98%-----
+NEW COMMAND: node liri.js spotify-this-song meant to live; 
+Switchfoot-----Meant to Live-----https://p.scdn.co/mp3-preview/d619df7f04217d84c9be6dc1e0d146515a7b67de?cid=329831336dc0444b8bd14949da43b2e4-----The Best Yet-----
+NEW COMMAND: node liri.js spotify-this-song welcome to the black parade; 
+My Chemical Romance-----Welcome to the Black Parade-----https://p.scdn.co/mp3-preview/0c19f3a680ff92f9d38a34b3310e6ff1a661ab1e?cid=329831336dc0444b8bd14949da43b2e4-----The Black Parade-----
+NEW COMMAND: node liri.js do-what-it-says; 
+My Chemical Romance-----Welcome to the Black Parade-----https://p.scdn.co/mp3-preview/0c19f3a680ff92f9d38a34b3310e6ff1a661ab1e?cid=329831336dc0444b8bd14949da43b2e4-----The Black Parade-----
+NEW COMMAND: node liri.js do-what-it-says; 
+Mr. Nobody-----7.8-----2009-----Belgium, Germany, Canada, France, USA, UK-----English, Mohawk-----A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.-----Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham-----67%-----
+NEW COMMAND: node liri.js movie-this up; 
+Up-----2009-----8.2-----USA-----English-----Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson-----Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.-----98%-----
+NEW COMMAND: node liri.js do-what-it-says; 
+My Chemical Romance-----Welcome to the Black Parade-----https://p.scdn.co/mp3-preview/0c19f3a680ff92f9d38a34b3310e6ff1a661ab1e?cid=329831336dc0444b8bd14949da43b2e4-----The Black Parade-----
+NEW COMMAND: node liri.js spotify-this-song bring me to life; 
+Bring Me To Life-----null-----Fallen-----Evanescence-----
+NEW COMMAND: node liri.js do-what-it-says; 
+
+NEW COMMAND: node liri.js do-what-it-says; 
+Gunstock Mountain Resort-----The Foundry at The Fillmore-----Philadelphia-----2019-08-03T19:00:30-----Dewey Beach-----Bottle & Cork-----2019-08-04T20:00:00-----The Signal-----Chattanooga-----2019-08-06T20:00:00-----Evergreen State Fair-----2019-08-26T19:30:00-----Gilford-----El Plaza Condesa-----Mexico City-----2019-09-12T21:00:00-----Del Mar Fairgrounds-----Del Mar-----2019-09-14T19:00:00-----Honeywell Center-----Wabash-----2019-10-05T19:00:00-----Temple Theatre-----Saginaw-----2019-10-06T19:00:00-----Peoria Civic Center Theater-----Peoria-----2019-10-10T19:00:00-----Goodyear Theater-----Akron-----2019-10-12T19:00:00-----The Athenaeum Theatre-----Columbus-----2019-10-13T19:00:00-----Hershey Theatre-----Hershey-----2019-10-15T19:00:00-----Roberts Wesleyan College – Voller Athletic Center-----Rochester-----2019-10-18T19:00:00-----Florida Theatre-----Jacksonville-----2019-10-24T19:00:00-----Saenger Theater-----Mobile-----2019-10-25T19:00:00-----Thala Mara-----Jackson-----2019-10-27T19:00:00-----Robinson Center - Robinson Performance Hall-----Little Rock-----2019-10-29T19:00:00-----Boulder Theater-----Boulder-----2019-11-02T19:00:00-----Thousand Oaks Civic Arts Plaza-----Thousand Oaks-----2019-11-07T19:00:00-----Bob Hope Theatre-----Stockton-----2019-11-09T19:00:00-----2019-08-02T09:00:00-----Monroe-----
+NEW COMMAND: node liri.js concert-this ed sheehan; 
+
+NEW COMMAND: node liri.js concert-this steven curtis chapman; 
+Asheville-----2019-08-10T19:30:40-----Amy Grant & Steven Curtis Chapman-----Venue 510-----2019-09-07T19:00:00-----First Presbyterian Church-----Burleson-----San Angelo-----2019-09-08T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----Hollidaysburg-----Steven Curtis Chapman: Acoustic Christmas-----2019-12-05T19:00:00-----Dayton-----Steven Curtis Chapman: Acoustic Christmas-----2019-12-03T19:00:00-----Butler-----2019-12-06T19:00:00-----Steven Curtis Chapman: Acoustic Christmas -----Johnson City-----2019-12-07T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----2019-12-08T19:30:00-----Steven Curtis Chapman: Acoustic Christmas-----Franklin-----2019-12-10T19:30:00-----Steven Curtis Chapman: Acoustic Christmas-----Williamsburg-----2019-12-12T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----Clarkston-----2019-12-13T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----Muskegon-----2019-12-14T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----Tualatin-----2019-12-15T19:00:00-----Steven Curtis Chapman: Acoustic Christmas-----Nashville-----2019-12-19T19:30:00-----The Great Alaskan Adventure-----Juneau-----2020-07-24T19:00:00-----Alexandria-----
