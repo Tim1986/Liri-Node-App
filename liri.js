@@ -55,8 +55,17 @@ function log() {
                 console.log("Content Added!");
             }
         });
-    } else {
+    } else if (searchType === "do-what-it-says") {
         fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js do-what-it-says; " + "\n", function (err) {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                console.log("Content Added!");
+            }
+        });
+    } else {
+        fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js " + searchType + " Default" + "; " + "\n", function (err) {
             if (err) {
                 console.log(err);
             }
