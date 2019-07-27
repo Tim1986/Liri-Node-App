@@ -28,8 +28,60 @@ All of these searches will log your command in the log.txt file, as well as the 
 
 <!-- Include screenshots, gifs or videos of the app functioning -->
 
+Here's the code for my requires, convenience variables, and switchcase:
+
 ![First Screenshot](/screenshot1.png)
+
+This is the code for my log function, which runs before every other function. There are four different types of commands it might log in the log.txt file:
+1. A command to concert-this, spotify-this-song, or movie-this. Types 3 and 4 don't have an inputString[3], and type 2 has "change" as its searchType.
+2. A command specifically for the change searchType.
+3. A command for the do-what-it-says searchType.
+4. A command for the default searches for concert-this, spotify-this-song, and movie-this.
+I have log.txt open in all of my gifs to show how it is updated with different commands.
+
+![First Screenshot](/screenshot2.png)
+
+Here's the code for the concert function. Concert, song, and movie all start with a conditional. If inputString[3] is empty, and the search didn't come from the do-what-it-says command, it will do the default search.
+
+![First Screenshot](/screenshot3.png)
+
+Here's a gif for using the concert function:
+
 ![First GIF](/liri1.gif)
+
+This catch is after the concert function, but I have the same catch after the song and movie functions.
+
+![First Screenshot](/screenshot4.png)
+
+Here's the code for the song function:
+
+![First Screenshot](/screenshot5.png)
+
+And here's a gif for using the song function:
+
+![First GIF](/liri2.gif)
+
+Here's the code for the movie function:
+
+![First Screenshot](/screenshot6.png)
+
+And here's a gif for using the movie function:
+
+![First GIF](/liri3.gif)
+
+Here's the code for the read and write functions (used for the do-what-it-says and change commands, respectively):
+
+![First Screenshot](/screenshot7.png)
+
+This gif shows the read function in action: 
+
+![First GIF](/liri4.gif)
+
+And the next three gifs show the write function in action. The first shows it changing the random.txt file to a concert-this search, the second changes it to a spotify-this-song search, and the third one changes it to a movie-this search. They have the random.txt file open so you can see it being updated in real time. Note that after changing the random.txt file, I run the new do-what-it-says command, and show that it's working by running the same commmand using the corresponding search feature directly.
+
+![First GIF](/liri5.gif)
+![First GIF](/liri6.gif)
+![First GIF](/liri7.gif)
 
 <!-- Contain a link to a deployed version of the app -->
 
