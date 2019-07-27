@@ -77,7 +77,7 @@ function log() {
 }
 
 function concert() {
-    if (inputString[3] === undefined) {
+    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
         search = "Switchfoot"
     }
 
@@ -125,7 +125,7 @@ function song() {
     var keys = require("./keys.js");
     var spotify = new Spotify(keys.spotify);
 
-    if (inputString[3] === undefined) {
+    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
         search = "welcome to the black parade"
     }
 
@@ -168,7 +168,7 @@ function song() {
 }
 
 function movie() {
-    if (inputString[3] === undefined) {
+    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
         search = "mr nobody"
     }
 
@@ -222,7 +222,9 @@ function read() {
         var adjustedData = data.split(",")
 
         search = adjustedData[1]
+        console.log(adjustedData[1])
         if (adjustedData[0] === "spotify-this-song") {
+            search = adjustedData[1]
             song()
         } else if (adjustedData[0] === "concert-this") {
             concert()
