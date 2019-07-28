@@ -7,38 +7,37 @@ var inputString = process.argv;
 var searchType = inputString[2];
 var search = inputString.slice(3).join("+");
 
-switch (searchType) {
-    case "concert-this":
-        log();
-        concert();
-        break;
+function recognizeInput() {
+    log();
+    switch (searchType) {
+        case "concert-this":
+            concert();
+            break;
 
-    case "spotify-this-song":
-        log();
-        song();
-        break;
+        case "spotify-this-song":
+            song();
+            break;
 
-    case "movie-this":
-        log();
-        movie();
-        break;
+        case "movie-this":
+            movie();
+            break;
 
-    case "do-what-it-says":
-        log();
-        read();
-        break;
+        case "do-what-it-says":
+            read();
+            break;
 
-    case "change":
-        log();
-        write();
-        break;
+        case "change":
+            write();
+            break;
 
-    default:
-        console.log("Not a recognized command")
+        default:
+            console.log("Not a recognized command")
+    }
 }
+recognizeInput()
 
 function log() {
-    if (inputString[3]) {
+    if (search !== "do-what-it-says") {
         fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js " + searchType + " " + inputString.slice(3).join(" ") + "; " + "\n", function (err) {
             if (err) {
                 console.log(err);
@@ -47,7 +46,7 @@ function log() {
                 console.log("Content Added!");
             }
         });
-    } else if (searchType === "change") {
+    } else if (searchType.toLowerCase() === "change") {
         fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js change " + inputString[3] + " " + inputString.slice(4).join(" ") + "; " + "\n", function (err) {
             if (err) {
                 console.log(err);
@@ -56,7 +55,7 @@ function log() {
                 console.log("Content Added!");
             }
         });
-    } else if (searchType === "do-what-it-says") {
+    } else if (searchType.toLowerCase() === "do-what-it-says") {
         fs.appendFile("log.txt", "\n" + "NEW COMMAND: node liri.js do-what-it-says; " + "\n", function (err) {
             if (err) {
                 console.log(err);
@@ -78,12 +77,10 @@ function log() {
 }
 
 function concert() {
-    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
+    if (!search) {
         search = "Switchfoot"
     }
-
     var concertQueryUrl = `https://rest.bandsintown.com/artists/${search}/events?app_id=codingbootcamp`
-
     axios.get(concertQueryUrl).then(
         function (response) {
             for (var i = 0; i < response.data.length; i++) {
@@ -97,9 +94,6 @@ function concert() {
                     fs.appendFile("log.txt", concertObject[key] + "-----", function (err) {
                         if (err) {
                             console.log(err);
-                        }
-                        else {
-                            // console.log("Content Added!");
                         }
                     });
                 }
@@ -125,15 +119,13 @@ function concert() {
 function song() {
     var keys = require("./keys.js");
     var spotify = new Spotify(keys.spotify);
-
-    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
+    if (!search) {
         search = "the sign"
         indexV = 2
     } else {
         indexV = 0
     }
-    console.log(indexV)
-        spotify
+    spotify
         .search({ type: 'track', query: search, limit: 3 })
         .then(function (response) {
             var songObject = {
@@ -142,15 +134,11 @@ function song() {
                 preview: response.tracks.items[indexV].preview_url,
                 album: response.tracks.items[indexV].album.name
             }
-            console.log("====" + response)
             for (var key in songObject) {
                 console.log('* ' + songObject[key])
                 fs.appendFile("log.txt", songObject[key] + "-----", function (err) {
                     if (err) {
                         console.log(err);
-                    }
-                    else {
-                        console.log("Content Added!");
                     }
                 });
             }
@@ -170,13 +158,12 @@ function song() {
             }
             console.log(error.config);
         });
-    }
+}
 
 function movie() {
-    if (inputString[3] === undefined && inputString[2] !== "do-what-it-says") {
+    if (!search) {
         search = "mr nobody"
     }
-
     var movieQueryUrl = `http://www.omdbapi.com/?t=${search}&y=&plot=short&apikey=trilogy`;
     axios.get(movieQueryUrl).then(
         function (response) {
@@ -195,9 +182,6 @@ function movie() {
                 fs.appendFile("log.txt", movieObject[key] + "-----", function (err) {
                     if (err) {
                         console.log(err);
-                    }
-                    else {
-                        console.log("Content Added!");
                     }
                 });
             }
@@ -225,17 +209,9 @@ function read() {
             return console.log(error)
         }
         var adjustedData = data.split(",")
-
         search = adjustedData[1]
-        console.log(adjustedData[1])
-        if (adjustedData[0] === "spotify-this-song") {
-            search = adjustedData[1]
-            song()
-        } else if (adjustedData[0] === "concert-this") {
-            concert()
-        } else if (adjustedData[0] === "movie-this") {
-            movie()
-        }
+        searchType = adjustedData[0]
+        recognizeInput()
     })
 }
 

@@ -7,6 +7,17 @@ The liri-node-app makes it extremely easy to search the included APIs for inform
 
 This app is designed to make reviewing your search information extremely easy by logging your searches in your console, and additionally logging them in a log.txt document, with each new command giving line breaks for easy readability. The app also has built in functionality for reading outside documents (currently just a simple .txt file) and running searches based on their contents. It also has an additional command option "change," which can be used to rewrite the .txt file, so you can run searches from it as well.
 
+## Installation
+
+In order to use this app, follow these steps:
+1. Clone this repository: https://github.com/Tim1986/liri-node-app. 
+2. Install the necessary npms. Using your terminal, navigate to the folder with the cloned repository, and type npm install. 
+3. The node-spotify-api requires a client ID and client secret. Go to https://developer.spotify.com/my-applications/#!/ and log in or create an account. Then go to https://developer.spotify.com/my-applications/#!/applications/create to register a new application.
+4. Make a file named .env and add the following to it, using your client ID and client secret from spotify:
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+
+## Overview
 <!-- Give a high-level overview of how the app is organized -->
 The app is organized in three simple parts for easy readability:
 
@@ -37,7 +48,7 @@ Here's the code for my requires, convenience variables, and switchcase:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This is the code for my log function, which runs before every other function. There are four different types of commands it might log in the log.txt file:
-1. A command to concert-this, spotify-this-song, or movie-this. Types 3 and 4 don't have an inputString[3], and type 2 has "change" as its searchType.
+1. A command for concert-this, spotify-this-song, or movie-this.
 2. A command specifically for the change searchType.
 3. A command for the do-what-it-says searchType.
 4. A command for the default searches for concert-this, spotify-this-song, and movie-this.
