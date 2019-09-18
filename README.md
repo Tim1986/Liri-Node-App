@@ -91,6 +91,8 @@ https://tim1986.github.io/liri-node-app/
 
 ## Development Process
 
-The app uses the Bands in Town, Spotify, and OMDB APIs, as well as the Axios, Node-Spotify-API, Dotenv, FS, and Moment NPMs.
+The app uses the Bands in Town, Node-Spotify, and OMDB APIs, as well as the Axios, Dotenv, FS, and Moment NPMs.
 
-I made this app while I was a student six weeks into a twelve week coding boot camp at UNC Charlotte. I was given this project as an assignment, and given a series of activities on how to use node.js that I have used as guides in order to write this code. I wrote this code, with those caveats. I was given specific default songs to include, and the do-what-it-says feature was part of the assignment. Allowing the user to change the .txt file so do-what-it-says would give different commands was outside the scope of the assignment. It was just something I wanted to try.
+I made this app while I was a student six weeks into a twelve week coding boot camp at UNC Charlotte. I was given this project as an assignment, and given a series of activities on how to use node.js that I have used as guides in order to write this code. I wrote this code, with those caveats. I was given specific default songs to include, and the do-what-it-says feature was part of the assignment. 
+
+Allowing the user to change the .txt file so do-what-it-says would give different commands was outside the scope of the assignment. It was just something I wanted to try.
